@@ -1,0 +1,134 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  
+  
+
+  .item1 { grid-area: header; }
+  .item2 { grid-area: picture; }
+  .item3 { grid-area: general; }
+  .item4 { grid-area: work; }
+  .item5 { grid-area: education; }
+  .item6 { grid-area: skills; }
+  .item7 { grid-area: languages; }
+  .item8 { grid-area: interest; }
+  .item9 { grid-area: footer; }
+  
+  .grid-container {
+    display: grid;
+    width: 70%;
+    margin: auto;
+    grid-template-areas:
+      'header header header header header header header'
+      'picture general general general general general general'
+      'work work work work work education education'
+      'skills skills skills skills skills skills skills'
+      'languages languages languages languages languages interest interest'
+      'footer footer footer footer footer footer footer';
+    grid-gap: 5px;
+    background-color: lightseagreen;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 5px 5px 5px 5px; rgb(10, 49, 47);
+    border-radius: 25px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    border: 10px 10px 10px 10px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+    padding-top: 20px;
+    font-size: 30px;
+    border-radius: 25px;
+  }
+
+  h1{
+     text-shadow: 2px 2px black;
+      text-align: center;
+      font-size: 50px;
+      color: rgb(23, 112, 108);
+}
+
+
+h2 {
+    text-shadow: 2px 2px black;
+      font-size: 40px;
+      color: rgb(23, 112, 108);
+    
+}
+
+h3 {
+    font-size: 30px;
+    color: rgb(10, 49, 47);
+}
+
+p {
+    font-size: 25px;
+    color:rgb(10, 49, 47);
+    text-align: left;
+}
+
+ul {
+    font-size: 25px;
+    color:rgb(10, 49, 47);
+    text-align: left;
+}
+
+ol {
+    font-size: 25px;
+    color:rgb(10, 49, 47);
+    text-align: left;
+}
+
+
+th {
+    text-align: left;
+    border-style: groove; border-color: rgb(20, 107, 103); border-width: 2px;
+    padding: 10px 10px 10px 10px;
+}
+
+td {
+    text-align: left;
+    border-style: groove; border-color: rgb(20, 107, 103); border-width: 2px;
+    padding: 10px 10px 10px 10px;
+}
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px;
+  margin-bottom: 16px; 
+  resize: vertical
+}
+
+button {
+  background-color: #073638;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #73d4b7;
+}
+
+
+#form {
+  padding: 20px;
+  margin: auto;
+}
+
+  
